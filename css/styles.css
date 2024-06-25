@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #ffffff;
+    color: #0a0000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 20px; */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+}
+
+header {
+    padding: 60px;
+    text-align: center;
+    color: #070f4e;
+    background-image: url(../images/HCI1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+
+}
+.frontpage{
+    width: 100%;
+    height:50vh;
+}
+.frontpage h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.frontpage p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-left: 20vmax;
+    margin-right: 20vmax;
+}
+
+.featured-projects {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.featured-projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 45%;
+    box-sizing: border-box;
+    flex: 1 1 45%; /* Adjust to fit two cards per row */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Reduce bottom margin */
+}
+
+.project-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 0; /* Remove top margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+}
+
+main {
+    margin: 0 auto;
+    height: 80vh;
+}
+
+#contact {
+    background-color: #79c2d0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.centered-heading {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.leaders, .coordinators {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.leader, .coordinator {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.leader img, .coordinator img {
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin : 0 auto;
+}
+
+
+.page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+.page::before {
+    content: "";
+    background-image: url(../images/iitkLib.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.aboutUs {
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 20px;
+    background-color: #db996c;
+}
+
+.aboutUs h1 {
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.aboutUs p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-left: 20vmax;
+    margin-right: 20vmax;
+}
+
+
+#about1{
+    width: 100%;
+    position: relative;
+    padding: 10px;
+}
+#about1 p {
+    font-size: 22px; /* Increase the font size */
+    color: #000; /* Adjust the color if needed */
+    z-index: 1; /* Ensures the text is on top */
+    position: relative;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.logo {
+    width: 10px
+}
